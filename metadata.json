@@ -1,0 +1,17 @@
+{
+  "name": "Jova Graphix Portfolio",
+  "description": "Enhanced the WhatsApp contact on the contact page by combining the text and image into a single button. Added click-to-preview functionality for all service example images on the services-logos, services-flyers, and services-labels pages.",
+  "entry": "index.html",
+  "multiPage": true,
+  "files": [
+    "contact.html",
+    "index.html",
+    "metadata.json",
+    "services-flyers.html",
+    "services-labels.html",
+    "services-logos.html",
+    "services.html"
+  ],
+  "tailwind": { "source": "play-cdn" },
+  "generatedAt": "2024-07-30T17:15:00Z"
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Professional Portfolio - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#2563eb',
+                        'secondary-blue': '#bfdbfe',
+                        'dark-text': '#1f2937',
+                        'light-bg': '#f9fafb',
+                        'whatsapp-green': '#25D366' 
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for mobile menu transition */
+        #main-nav {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-dark-text bg-light-bg min-h-screen flex flex-col">
+    <header class="bg-white shadow-sm py-4 px-6 md:px-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-primary-blue"><img src="logo.jpg" alt="Jova Graphix Logo" class="inline-block w-8 h-8 mr-2 rounded-full object-cover">Jova Graphix</a>
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-dark-text hover:bg-secondary-blue focus:outline-none focus:ring-2 focus:ring-primary-blue" aria-label="Toggle navigation menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+            <nav id="main-nav" class="hidden md:flex md:items-center md:space-x-8 absolute md:relative top-16 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none py-4 md:py-0 z-10 flex-col md:flex-row">
+                <a href="index.html" class="block px-6 py-2 md:p-0 text-dark-text hover:text-primary-blue font-medium">Home</a>
+                <a href="services.html" class="block px-6 py-2 md:p-0 text-dark-text hover:text-primary-blue font-medium">Services</a>
+                <a href="contact.html" class="block px-6 py-2 md:p-0 text-dark-text hover:text-primary-blue font-medium">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="bg-primary-blue text-white py-16 px-6 md:py-24 text-center">
+            <div class="container mx-auto">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Crafting Digital Excellence</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">I specialize in creating stunning logos, impactful flyers, and professional labels that elevate your brand.</p>
+                <a href="services.html" class="inline-block bg-white text-primary-blue hover:bg-secondary-blue px-8 py-3 rounded-full text-lg font-semibold transition duration-300">View My Services</a>
+            </div>
+        </section>
+
+        <section class="py-16 px-6 md:py-20 bg-white">
+            <div class="container mx-auto text-center max-w-3xl">
+                <a href="Me.jpg" target="_blank" aria-label="View larger profile picture" class="block mx-auto mb-6"><img src="Me.jpg" alt="Profile Picture" class="rounded-full w-32 h-32 object-cover mx-auto border-4 border-primary-blue shadow-lg"></a>
+                <h2 class="text-3xl md:text-4xl font-bold text-dark-text mb-6">Who I Am</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    I'm a passionate designer with a keen eye for detail and a commitment to bringing your vision to life. With years of experience in graphic design, I help businesses and individuals establish a strong visual identity that resonates with their audience. My goal is to deliver creative solutions that are not only aesthetically pleasing but also strategically effective.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-16 px-6 md:py-20 bg-light-bg">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark-text mb-10">My Core Expertise</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                        <svg class="w-16 h-16 mx-auto mb-4 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                        <h3 class="text-xl font-semibold mb-2 text-dark-text">Logo Design</h3>
+                        <p class="text-gray-700">Crafting unique and memorable brand identities that stand out.</p>
+                        <a href="services-logos.html" class="mt-4 inline-block text-primary-blue hover:underline font-medium">Learn More &rarr;</a>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                        <svg class="w-16 h-16 mx-auto mb-4 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        <h3 class="text-xl font-semibold mb-2 text-dark-text">Flyer Design</h3>
+                        <p class="text-gray-700">Eye-catching promotional materials that grab attention and deliver your message.</p>
+                        <a href="services-flyers.html" class="mt-4 inline-block text-primary-blue hover:underline font-medium">Learn More &rarr;</a>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                        <svg class="w-16 h-16 mx-auto mb-4 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V17a2 2 0 01-2 2H7a2 2 0 01-2-2V5a2 2 0 012-2z"></path></svg>
+                        <h3 class="text-xl font-semibold mb-2 text-dark-text">Label Design</h3>
+                        <p class="text-gray-700">Professional and appealing labels that enhance product presentation.</p>
+                        <a href="services-labels.html" class="mt-4 inline-block text-primary-blue hover:underline font-medium">Learn More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark-text text-white py-8 px-6 md:px-8 mt-auto">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="index.html" class="hover:text-primary-blue">Home</a>
+                <a href="services.html" class="hover:text-primary-blue">Services</a>
+                <a href="contact.html" class="hover:text-primary-blue">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mainNav = document.getElementById('main-nav');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mainNav.classList.toggle('hidden');
+                mainNav.classList.toggle('flex');
+            });
+
+            mainNav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!mainNav.classList.contains('hidden') && window.innerWidth < 768) {
+                        mainNav.classList.add('hidden');
+                        mainNav.classList.remove('flex');
+                    }
+                });
+            });
+
+            let isMobile = window.innerWidth < 768;
+            window.addEventListener('resize', () => {
+                const newIsMobile = window.innerWidth < 768;
+                if (isMobile && !newIsMobile) { // Transitioned from mobile to desktop
+                    mainNav.classList.remove('hidden');
+                    mainNav.classList.add('flex');
+                } else if (!isMobile && newIsMobile) { // Transitioned from desktop to mobile
+                    if (mainNav.classList.contains('flex') && !mainNav.classList.contains('hidden')) {
+                        mainNav.classList.add('hidden');
+                        mainNav.classList.remove('flex');
+                    }
+                }
+                isMobile = newIsMobile;
+            });
+        });
+    </script>
+</body>
+</html>
